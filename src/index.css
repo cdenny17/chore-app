@@ -1,0 +1,139 @@
+body {
+  margin: auto;
+  padding: 50px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+  background-color: rgb(45, 220, 233)
+}
+
+header {
+  font-weight: 900;
+}
+
+input, button {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+}
+
+#container {
+  display: flex;
+  justify-content: flex;
+  
+}
+
+/* #wheel{
+color: #00C78C
+#4D4DFF
+#7171C6
+#7F00FF
+#B272A6
+#B62084
+#BCED91
+#BCED91
+#00b4cc
+#fc0015
+#332d46
+#57314b
+#9b5055
+#ff4204
+#f6ff46
+} this helped fix the array of colors*/
+
+
+/*found spinnng wheel online codepen*/
+#wheel {
+  position: absolute;
+  left: 31%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: #272727;
+}
+.circle1 {
+  position: relative;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #0066FF;
+  border-left: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  transform:rotate(320deg);
+  animation: spin1 0.5s infinite linear;
+  
+}
+.circle2 {
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #0066FF;
+  border-left: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  transform:rotate(80deg);
+  animation: spin2 0.5s infinite linear;
+}
+.circle3 {
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #0066FF;
+  border-left: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  transform:rotate(200deg);
+  animation: spin3 0.5s infinite linear;
+}
+/* animations */
+
+@keyframes spin1 {
+  0% {
+  -moz-transform:rotate(320deg);
+  -webkit-transform:rotate(320deg);
+  -o-transform:rotate(320deg);
+  -ms-transform:rotate(320deg);
+  }
+  100% {
+  -moz-transform:rotate(680deg);
+  -webkit-transform:rotate(680deg);
+  -o-transform:rotate(680deg);
+  -ms-transform:rotate(680deg); 
+  }
+}
+@keyframes spin2 {
+  0% {
+  -moz-transform:rotate(80deg);
+  -webkit-transform:rotate(80deg);
+  -o-transform:rotate(80deg);
+  -ms-transform:rotate(80deg);
+  }
+  100% {
+  -moz-transform:rotate(440deg);
+  -webkit-transform:rotate(440deg);
+  -o-transform:rotate(440deg);
+  -ms-transform:rotate(440deg); 
+  }
+}
+
+@keyframes spin3 {
+  0% {
+  -moz-transform:rotate(200deg);
+  -webkit-transform:rotate(200deg);
+  -o-transform:rotate(200deg);
+  -ms-transform:rotate(200deg);
+  }
+  100% {
+  -moz-transform:rotate(560deg);
+  -webkit-transform:rotate(560deg);
+  -o-transform:rotate(560deg);
+  -ms-transform:rotate(560deg); 
+  }
+}

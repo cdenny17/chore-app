@@ -1,0 +1,47 @@
+.ChoreListMain .header input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    width: 165px;
+    margin-left: 5px;
+}
+
+.ChoreListMain .header button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #fff;
+    border: 2px solid #0066FF;
+}
+
+.ChoreListMain .header button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer;
+}
+
+.ChoreListMain .theList li {
+    color: #333333;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+
+    transition: background-color .2s ease-out;
+}
+
+.ChoreListMain .theList li:hover {
+    background-color: rgb(228, 171, 181);
+    cursor: pointer;
+}
+    
+.ChoreListMain .wheel {
+    margin-bottom: 50px;
+}
+ul.theList {
+    padding: 0px;
+}
+
